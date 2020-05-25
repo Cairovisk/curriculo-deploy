@@ -1,4 +1,4 @@
-# curriculo
+# Currículo
 
 ## Project setup
 ```
