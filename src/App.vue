@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav" class="teste">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <NavBar/>
     <router-view/>
   </div>
 </template>
-
+<script>
+import NavBar from '@/components/NavBar.vue'
+import 'bootstrap-4-grid/css/grid.min.css'
+import '@/styles/_font.scss'
+import '@/styles/_animations.scss'
+export default {
+  components: { NavBar }
+}
+</script>>
 <style lang="scss">
-.teste {
-  display: flex;
-  flex-direction: column-reverse;
-
+#app {
+      height: 100%;
+      background: $white-secondary;
+}
+body {
+        font-family: $font;
+        margin: 0;
+        height: 100vh; 
 }
 </style>

@@ -1,0 +1,208 @@
+//Font weight
+$thin: 200;
+$light: 300;
+$regular: normal;
+$medium: 500;
+$semibold: 600;
+$bold: bold;
+
+//Font
+$font: Montserrat;
+
+//Colors
+$blue-primary: #222D5F;
+$blue-secondary: #004B8A;
+$blue-tertiary: #006AC3;
+$blue-light: #0080EB;
+$blue-dark: #1C254E;
+$black: #2D3B41;
+$white: #fff;
+$white-secondary: #F7F7F7; 
+$grey-primary: #BBC6C5;
+$grey-secondary: #DCDDE1;
+$grey-light: #AAB3C0;
+$red: #E0221C;
+$red-secondary: #E54D37;
+$green: #1F7D47;
+$green-success: #259856;
+$yellow: #EDAA3C;
+$yellow-dark: #CEA229;
+$yellow-light: #FFDC27;
+$pink: #FFE0E0;
+
+.btn {
+	text-decoration: none;
+	border: none;
+	border-radius: 25px;
+	font-family: $font;
+	font-style: normal;
+	font-weight: $bold;
+	font-size: 24px;
+	line-height: 29px;
+	color: $black;
+	height: 50px;
+	width: 180px;
+	padding: 0 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $grey-secondary;
+	transition: 0.2s;
+	margin-right: 45px;
+	cursor: pointer;
+
+	&:hover {
+		transition: 0.2s;
+		background: $grey-light;
+	}
+
+	&.btn-send {
+		border-radius: 5px;
+	}
+
+	&.btn-card {
+		padding: 5px 10px;
+	}
+
+	&.btn-action {
+		background: $yellow;
+		color: $white-secondary;
+		transition: 0.2s;
+
+		&:hover {
+			transition: 0.2s;
+			background: $yellow-light;
+		}
+	}
+
+	&.btn-primary {
+		background: $red;
+		color: $white-secondary;
+		transition: 0.2s;
+
+		&:hover {
+			transition: 0.2s;
+			background: $red-secondary;
+		}
+	}
+
+	&.btn-secondary {
+		background: $blue-light;
+		color: $white;
+		transition: 0.2s;
+	}
+
+	&.btn-tertiary {
+		background: $blue-secondary;
+		color: $white;
+		transition: 0.2s;
+	}
+
+	&.btn-success {
+		background: $green-success;
+		color: $white;
+		transition: 0.2s;
+	}
+
+	&.btn-error {
+		background: $red;
+		color: $white;
+		transition: 0.2s;
+	}
+
+	&.apple {
+		color: $white-secondary;
+		background: $black;
+	}
+
+	&.google {
+		color: $black;
+		background: $white;
+	}
+
+	&:focus {
+		border: none;
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+.state {
+	padding: 5px 10px;
+	border: 1px solid $grey-primary;
+	border-radius: 15px;
+	font-family: $font;
+	font-style: normal;
+	font-weight: $semibold;
+	font-size: 11px;
+	line-height: 13px;
+	color: $grey-primary;
+	background: inherit;
+
+	&.btn-send {
+		border-radius: 5px;
+	}
+
+	&.btn-card {
+		padding: 5px 10px;
+	}
+
+	&.state-secondary {
+		border: 1px solid $blue-light;
+		color: $blue-light;
+	}
+
+	&.state-success {
+		border: 1px solid $green-success;
+		color: $green-success;
+	}
+}
+
+.sptl {
+	background: $white-secondary;
+	color: $black;
+	font-family: $font;
+	font-style: normal;
+	font-weight: $semibold;
+	font-size: 10px;
+	line-height: 12px;
+	border-radius: 3px;
+	padding: 0 5px;
+
+	&.sptl-default {
+		background: $grey-primary;
+		color: $white;
+	}
+
+	&.sptl-secondary {
+		background: $blue-light;
+		color: $white;
+	}
+
+	&.sptl-success {
+		background: $green-success;
+		color: $white;
+	}
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $blue-light;
+	transition: 0.2s;
+
+	&:hover {
+		color: $blue-primary;
+		transition: 0.2s;
+	}
+}
