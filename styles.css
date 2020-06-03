@@ -63,6 +63,16 @@ a {
   line-height: 17px;
   margin-bottom: 52px;
 }
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  border-radius: 100%;
+}
+
 .buttons {
   display: flex;
 }
